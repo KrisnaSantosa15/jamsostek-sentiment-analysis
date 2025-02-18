@@ -21,11 +21,13 @@ Data yang digunakan dalam analisis ini adalah data review aplikasi Jamsostek Mob
 - `content`: Isi review
 - `score`: Rating yang diberikan oleh pengguna (1-5)
 - `date`: Tanggal review
+
+
 Dataset ini masih belum bersih, sehingga kita perlu mengolah data terlebih dahulu dengan melakukan beberapa tahapan, seperti menghapus baris data yang kosong, menghapus data duplikat, labeling dan lain-lain.
 
 ## Metode Labeling
 
-Metode labelling yang digunakan dalam proyek analisis sentimen ini adalah dengan menggunakan lexicon-based. Lexicon-based adalah metode yang menggunakan kamus kata-kata yang sudah diberi label sentimen (positif, netral, negatif). Di mana sentimen teks ditentukan dengan mencocokkan kata-kata dalam teks dengan dua kamus lexicon (positif dan negatif) yang sudah memiliki skor sentimen. Skor sentimen dihitung dengan menjumlahkan nilai dari kata-kata yang ada di teks berdasarkan kamus tersebut. Sentimen akhir dikategorikan sebagai POSITIF, NEGATIF, atau NETRAL berdasarkan skor yang dihasilkan, dengan threshold -5 untuk negatif, 5 untuk positif, dan sisanya netral.
+Metode labelling yang digunakan dalam proyek analisis sentimen ini adalah dengan menggunakan lexicon-based. Lexicon-based adalah metode yang menggunakan kamus kata-kata yang sudah diberi label sentimen (positif, netral, negatif). Di mana sentimen teks ditentukan dengan mencocokkan kata-kata dalam teks dengan dua kamus lexicon (positif dan negatif) yang sudah memiliki skor sentimen. Skor sentimen dihitung dengan menjumlahkan nilai dari kata-kata yang ada di teks berdasarkan kamus tersebut. Sentimen akhir dikategorikan sebagai POSITIF, NEGATIF, atau NETRAL berdasarkan skor yang dihasilkan, dengan threshold < -5 untuk negatif, > 5 untuk positif, dan sisanya netral.
 
 ## Author
 
