@@ -1,0 +1,15 @@
+matplotlib
+seaborn
+pandas
+emoji
+nltk
+wordcloud
+scikit-learn
+sastrawi
+imbalanced-learn
+gensim
+tensorflow
+keras
+streamlit
+xgboost
+google-play-scraper
